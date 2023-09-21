@@ -8,4 +8,7 @@ import { FastTextDecoder } from './o-decoder.js';
 scope['TextEncoder'] = scope['TextEncoder'] || FastTextEncoder;
 scope['TextDecoder'] = scope['TextDecoder'] || FastTextDecoder;
 
+scope['FastTextEncoder'] = FastTextEncoder;
+scope['FastTextDecoder'] = FastTextDecoder;
+
 // export {};

@@ -32,7 +32,7 @@ var errorPrefix = `${failedToString} ${ctorString}: the `;
  * @param {{fatal: boolean}=} options
  */
 export function FastTextDecoder(utfLabel, options) {
-  maybeThrowFailedToOption(options && options.fatal, ctorString, 'fatal');
+  //maybeThrowFailedToOption(options && options.fatal, ctorString, 'fatal');
 
   utfLabel = utfLabel || 'utf-8';
 
@@ -59,6 +59,9 @@ export function FastTextDecoder(utfLabel, options) {
  */
 FastTextDecoder.prototype.decode = function (buffer, options) {
   maybeThrowFailedToOption(options && options.stream, 'decode', 'stream');
+
+  if(buffer == undefined)
+    return "";
 
   var bytes;
 

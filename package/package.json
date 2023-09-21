@@ -1,6 +1,6 @@
 {
   "name": "@qumeta/fast-text-encoding",
-  "version": "1.0.7",
+  "version": "1.0.10",
   "description": "Fast polyfill for TextEncoder and TextDecoder, only supports utf-8",
   "main": "text.min.js",
   "repository": "https://github.com/qumeta/fast-text-encoding.git",
